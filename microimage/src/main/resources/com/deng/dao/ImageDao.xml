@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.deng.dao.ImageDao">
+
+    <insert id="addImage" parameterType="com.deng.bean.Image" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `image`(`description`,`fileName`) VALUES(#{description},#{fileName})
+    </insert>
+
+    <select id="getAllImages" resultType="com.deng.bean.Image">
+        SELECT * FROM `image`
+    </select>
+</mapper>
