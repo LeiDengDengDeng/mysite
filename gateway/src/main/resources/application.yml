@@ -1,0 +1,20 @@
+server:
+  port: 5555
+
+# 应用(服务)名称
+spring:
+  application:
+    name: gateway
+
+# 注册中心地址
+eureka:
+  client:
+    serviceUrl:defaultZone: http://127.0.0.1:8761/eureka/
+
+# 映射配置
+zuul:
+  ignored-services: microapp
+  routes:
+    microimage:
+      path: /microimage/**
+      service-id: microimage

@@ -9,4 +9,6 @@ import java.util.List;
  */
 public interface ImageService {
     List<Image> getAllImages();
+
+    int addImage(Image image);
 }

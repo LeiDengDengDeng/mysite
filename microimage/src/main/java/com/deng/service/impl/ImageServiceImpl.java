@@ -20,4 +20,9 @@ public class ImageServiceImpl implements ImageService {
     public List<Image> getAllImages() {
         return imageDao.getAllImages();
     }
+
+    @Override
+    public int addImage(Image image) {
+        return imageDao.addImage(image);
+    }
 }

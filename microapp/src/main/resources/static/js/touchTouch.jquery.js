@@ -7,7 +7,7 @@
  */
 
 (function(){
-	
+
 	/* Private variables */
 	
 	var overlay = $('<div id="galleryOverlay">'),

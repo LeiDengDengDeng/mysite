@@ -9,7 +9,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @MapperScan("com.deng.dao")
 public class MicroImageApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(MicroImageApplication.class, args);
 	}
